@@ -1,0 +1,7 @@
+# Arquivos de compilação
+*.class
+
+# Configurações de IDEs
+.idea/
+*.iml
+.vscode/

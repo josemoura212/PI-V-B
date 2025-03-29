@@ -1,0 +1,41 @@
+@startuml context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title "Puc PI V-B"
+
+
+System(Arduino,"Arduino UNO", "Microcontroladora Arduino UNO")
+
+System_Ext(temp,"TMP36","Sensor de temperatura")
+
+System_Ext(umidade,"Soil Moisture Sensor","Sensor de umidade")
+
+System_Ext(led_7_seg_temp,"Tela de 7 Segmentos","Temperatura atual")
+
+System_Ext(led_7_seg_umidade,"Tela de 7 Segmentos","Umidade atual")
+
+System_Ext(ring_temp,"Ring led da temperatura","Indica a temperatura ideial")
+
+System_Ext(ring_umidade,"Ring led da umidade","Indica a umidade ideial")
+
+System(API,"Micro API","Java Spring boot")
+
+Person(App,"App mobile","Flutter")
+
+Rel(Arduino,API,"POST", "HTTPS")
+
+Rel(App,API,"GET", "HTTPS")
+
+Rel(temp,Arduino,"Analog", "I2C")
+
+Rel(umidade,Arduino,"Analog", "I2C")
+
+Rel(Arduino,led_7_seg_temp,"Digital", "I2C")
+
+Rel(Arduino,led_7_seg_umidade,"Digital", "I2C")
+
+Rel(Arduino,ring_temp,"Digital", "I2C")
+
+Rel(Arduino,ring_umidade,"Digital", "I2C")
+
+@enduml
