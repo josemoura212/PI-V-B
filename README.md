@@ -18,8 +18,22 @@ Este projeto contém uma estrutura básica em Java com um exemplo de simulação
 
 ## Exemplo de Saída
 ```
-Olá, mundo!
 Temperatura simulada: 24.8 °C
 Umidade simulada: 58 %
 ```
 
+
+# PROJETO INTEGRADOR V-B
+
+----------------------
+## Desenvolvido por
+----------------------
+Ernandes Campos Yosimura
+Guilherme Rezende Ganim
+José Augusto Soares de Moura
+Jhennifer Jhulliane do Couto Borges
+
+----------------------
+## Apresentação
+----------------------
+VIDEO DE APRESENTAÇÃO: https://youtu.be/HHuRzPLlBBw
