@@ -29,8 +29,11 @@ Umidade simulada: 58 %
 ## Desenvolvido por
 ----------------------
 Ernandes Campos Yosimura
+
 Guilherme Rezende Ganim
+
 José Augusto Soares de Moura
+
 Jhennifer Jhulliane do Couto Borges
 
 ----------------------
